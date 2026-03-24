@@ -4,6 +4,9 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+/**
+ * Миграция добавляет поле user_id к таблице databases.
+ */
 return new class extends Migration
 {
     /**
@@ -12,7 +15,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('databases', function (Blueprint $table) {
-            $table->foreignId('user_id')->nullable()->after('id')->constrained()->nullOnDelete();
+            $table->foreignId('user_id')->nullable()->after('id')->constrained()->nullOnDelete()->comment('Владелец базы данных');
         });
     }
 
