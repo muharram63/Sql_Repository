@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Basic Sign Up | Front - Admin &amp; Dashboard Template</title>
+    <title>Регистрация</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{{asset('admin/assets/img/logo_mini.png')}}">
 
-    <!-- Font -->
-    <link href="{{asset('admin/../../css2?family=Inter:wght@400;600&display=swap')}}" rel="stylesheet">
+    <link href="../../css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="{{asset('admin/assets/css/vendor.min.css')}}">
+    <link rel="stylesheet" href="admin/assets/css/vendor.min.css">
 
     <!-- CSS Front Template -->
-    <link rel="stylesheet" href="{{asset('admin/assets/css/theme.min.css')}}?v=1.0')}}">
+    <link rel="stylesheet" href="admin/assets/css/theme.min.css?v=1.0">
 
-    <link rel="preload" href="{{asset('admin/assets/css/theme.min-1.css')}}" data-hs-appearance="default" as="style">
-    <link rel="preload" href="{{asset('admin/assets/css/theme-dark.min.css')}}" data-hs-appearance="dark" as="style">
+    <link rel="preload" href="admin/assets/css/theme.min-1.css" data-hs-appearance="default" as="style">
+    <link rel="preload" href="admin/assets/css/theme-dark.min.css" data-hs-appearance="dark" as="style">
 
     <style data-hs-appearance-onload-styles="">
         *
@@ -36,7 +34,7 @@
     </style>
 
     <script>
-        window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","assets/js/demo.js"],"build":["assets/css/theme.css","assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","assets/js/demo.js","assets/css/theme-dark.css","assets/css/docs.css","assets/vendor/icon-set/style.css","assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js","assets/js/demo.js"]},"minifyCSSFiles":["assets/css/theme.css","assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*assets/js/theme-custom.js":""},"build":{"*assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
+        window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["admin/assets/js/hs.theme-appearance.js","admin/assets/js/hs.theme-appearance-charts.js","admin/assets/js/demo.js"],"build":["admin/assets/css/theme.css","admin/assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","admin/assets/js/demo.js","admin/assets/css/theme-dark.css","admin/assets/css/docs.css","admin/assets/vendor/icon-set/style.css","admin/assets/js/hs.theme-appearance.js","admin/assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js","admin/assets/js/demo.js"]},"minifyCSSFiles":["admin/assets/css/theme.css","admin/assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*admin/assets/js/theme-custom.js":""},"build":{"*admin/assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"admin/assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
         window.hs_config.gulpRGBA = (p1) => {
             const options = p1.split(',')
             const hex = options[0].toString()
@@ -119,13 +117,14 @@
         }
     </script>
 </head>
+
 <body>
 
-<script src="{{asset('admin/assets/js/hs.theme-appearance.js')}}"></script>
+<script src="admin/assets/js/hs.theme-appearance.js"></script>
 
 <!-- ========== MAIN CONTENT ========== -->
 <main id="content" role="main" class="main">
-    <div class="position-fixed top-0 end-0 start-0 bg-img-start" style="height: 32rem; background-image: url({{asset("admin/assets/svg/components/card-6.svg")}});">
+    <div class="position-fixed top-0 end-0 start-0 bg-img-start" style="height: 32rem; background-image: url(admin/assets/svg/components/card-6.svg);">
         <!-- Shape -->
         <div class="shape shape-bottom zi-1">
             <svg preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewbox="0 0 1921 273">
@@ -137,8 +136,8 @@
 
     <!-- Content -->
     <div class="container py-5 py-sm-7">
-        <a class="d-flex justify-content-center mb-5" href="index.html">
-            <img class="zi-2" src="{{asset('admin/assets/svg/logos/logo.svg')}}" alt="Image Description" style="width: 8rem;">
+        <a class="d-flex justify-content-center mb-5" href="">
+            <img class="zi-2" src=""  alt="Image Description" style="width: 10rem;">
         </a>
 
         <div class="mx-auto" style="max-width: 30rem;">
@@ -146,98 +145,80 @@
             <div class="card card-lg mb-5">
                 <div class="card-body">
                     <!-- Form -->
-                    <form  action="{{route('register')}}" method="post">
+                    <form class="js-validate needs-validation  mx-auto" style="max-width: 600px;" novalidate action="{{ route('register') }}" method="post">
                         @csrf
-                        <div class="text-center">
-                            <div class="mb-5">
-                                <h1 class="display-5">Создайте свою учетную запись</h1>
-                                <p>У вас уже есть аккаунт?  <a class="link" href="authentication-login-basic.html">Войдите здесь.</a></p>
-                            </div>
-
-                            <div class="d-grid mb-4">
-                                <a class="btn btn-danger btn-lg" href="#" style="border-radius: 5vh;">
-                    <span class="d-flex justify-content-center align-items-center">
-                      <img class="avatar avatar-xss me-2" src="{{asset('admin/assets/svg/brands/google-icon.svg')}}" alt="Image Description">
-                      Зарегистрируйтесь через Google
-                    </span>
-                                </a>
-                            </div>
-
-                            <span class="divider-center text-muted mb-4">OR</span>
+                        <div class="text-center mb-4">
+                            <h1 class="display-6">Регистрация</h1>
+                            <p class="text-muted">Уже есть аккаунт?
+                                <a class="link-primary" href="{{ route('login') }}">Войти</a>
+                            </p>
                         </div>
 
-                        <label class="form-label">Имя</label>
-
-                        <!-- Form -->
+                        <!-- Имя и возраст -->
                         <div class="row">
-                            <div class="col-sm-6">
-                                <!-- Form -->
-                                <div class="mb-4">
-                                    <input type="text" class="form-control" name="name" required="Заполните поле" placeholder="Введите свое имя" style="width: 63vh;">
-                                </div>
-                                <!-- End Form -->
+                            <div class="col-sm-6 mb-3">
+                                <label class="form-label" for="name">Полное имя</label>
+                                <input type="text" class="form-control @error('name') is-invalid @enderror"
+                                       name="name" id="name" value="{{ old('name') }}" placeholder="Иван Иванов" required>
+                                @error('name')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
 
-                        </div>
-                        <!-- End Form -->
-
-                        <!-- Form -->
-                        <div class="mb-4">
-                            <label class="form-label" for="signupSrEmail">E-mail</label>
-                            <input type="email" class="form-control form-control-lg" name="email"  placeholder="Введите свой @email.com " aria-label="Markwilliams@site.com" required="">
-                        </div>
-                        <!-- End Form -->
-
-                        <!-- Form -->
-                        <div class="mb-4">
-                            <label class="form-label">Пароль</label>
-
-                            <div class="input-group input-group-merge" data-hs-validation-validate-class="">
-                                <input type="password" class="js-toggle-password form-control form-control-lg" name="password" id="signupSrPassword" placeholder="Не менне 8 символов" required="Заполните поле" minlength="8" data-hs-toggle-password-options='{
-                           "target": [".js-toggle-password-target-1", ".js-toggle-password-target-2"],
-                           "defaultClass": "bi-eye-slash",
-                           "showClass": "bi-eye",
-                           "classChangeTarget": ".js-toggle-password-show-icon-1"
-                         }'>
-                                <a class="js-toggle-password-target-1 input-group-append input-group-text" href="javascript:">
-                                    <i class="js-toggle-password-show-icon-2 bi-eye"></i>
-                                </a>
+                            <div class="col-sm-6 mb-3">
+                                <label class="form-label" for="old">Возраст</label>
+                                <input type="number" class="form-control @error('old') is-invalid @enderror"
+                                       name="old" id="old" value="{{ old('old') }}" placeholder="18" required>
+                                @error('old')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
-
                         </div>
-                        <!-- End Form -->
 
-                        <!-- Form -->
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Электронная почта</label>
+                            <input type="email" class="form-control @error('email') is-invalid @enderror"
+                                   name="email" id="email" value="{{ old('email') }}" placeholder="example@mail.com" required>
+                            @error('email')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <!-- Роль -->
+                        <div class="mb-3">
+                            <label class="form-label" for="user_role">Роль</label>
+                            <select name="role" id="role" class="form-select @error('role') is-invalid @enderror" required>
+                                <option value="" disabled {{ old('role') ? '' : 'selected' }}>Выберите...</option>
+                                <option value="student" {{ old('role') == 'student' ? 'selected' : '' }}>Ученик</option>
+                                <option value="teacher" {{ old('role') == 'teacher' ? 'selected' : '' }}>Учитель</option>
+                            </select>
+                            @error('role')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <!-- Пароль -->
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Пароль</label>
+                            <input type="password" class="form-control @error('password') is-invalid @enderror"
+                                   name="password" id="password" placeholder="Минимум 8 символов" required>
+                            @error('password')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <!-- Подтверждение пароля -->
                         <div class="mb-4">
-                            <label class="form-label" for="signupSrConfirmPassword">Потвердите пароль</label>
-
-                            <div class="input-group input-group-merge" data-hs-validation-validate-class="">
-                                <input type="password" class="js-toggle-password form-control form-control-lg" name="password_confirmation" placeholder="Потвердите пароль" required="Заполните поле" minlength="8" data-hs-toggle-password-options='{
-                           "target": [".js-toggle-password-target-1", ".js-toggle-password-target-2"],
-                           "defaultClass": "bi-eye-slash",
-                           "showClass": "bi-eye",
-                           "classChangeTarget": ".js-toggle-password-show-icon-2"
-                         }'>
-                                <a class="js-toggle-password-target-2 input-group-append input-group-text" href="javascript:">
-                                    <i class="js-toggle-password-show-icon-2 bi-eye"></i>
-                                </a>
-                            </div>
-
+                            <label class="form-label" for="password_confirmation">Повторите пароль</label>
+                            <input type="password" class="form-control"
+                                   name="password_confirmation" id="password_confirmation"
+                                   placeholder="Введите пароль ещё раз" required>
                         </div>
-                        <!-- End Form -->
 
-                        <!-- Form Check -->
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="termsCheckbox" required="">
-                            <label class="form-check-label" for="termsCheckbox">
-                                Я принимаю <a href="#">Условия и Конфиденциональность.</a>
-                            </label>
-                        </div>
-                        <!-- End Form Check -->
-
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg">Создать</button>
-
+                        <!-- Кнопка -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Создать аккаунт</button>
                         </div>
                     </form>
                     <!-- End Form -->
@@ -246,10 +227,6 @@
             <!-- End Card -->
 
             <!-- Footer -->
-            <div class="position-relative text-center zi-1">
-                <small class="text-cap text-body mb-4"></small>
-
-            </div>
             <!-- End Footer -->
         </div>
     </div>
@@ -258,30 +235,11 @@
 <!-- ========== END MAIN CONTENT ========== -->
 
 <!-- JS Implementing Plugins -->
-<script src="{{asset('admin/assets/js/vendor.min.js')}}"></script>
+<script src="admin/admin/assets/js/vendor.min.js"></script>
 
 <!-- JS Front -->
-<script src="{{asset('admin/assets/js/theme.min.js')}}"></script>
-
-<!-- JS Plugins Init. -->
-<script>
-    (function() {
-        window.onload = function () {
-            // INITIALIZATION OF BOOTSTRAP VALIDATION
-            // =======================================================
-            HSBsValidation.init('.js-validate', {
-                onSubmit: data => {
-                    data.event.preventDefault()
-                    alert('Отправлено')
-                }
-            })
+<script src="admin/assets/js/theme.min.js"></script>
 
 
-            // INITIALIZATION OF TOGGLE PASSWORD
-            // =======================================================
-            new HSTogglePassword('.js-toggle-password')
-        }
-    })()
-</script>
 </body>
 </html>

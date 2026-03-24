@@ -25,3 +25,4 @@ require __DIR__.'/auth.php';
 Route::resource('users', UserController::class);
 Route::resource('/themes' , ThemeController::class );
 Route::resource('/theme' , \App\Http\Controllers\SiteThemeController::class);
+

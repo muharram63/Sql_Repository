@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Role;
 use App\Models\User;
+use App\Services\TenantDatabaseCreator;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -35,11 +37,27 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
+        $roleId = Role::query()->where('name', 'student')->value('id')
+            ?? Role::query()->min('id')
+            ?? 1;
+
         $user = User::create([
+            'role_id' => $roleId,
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
+
+        try {
+            app(TenantDatabaseCreator::class)->createForUser($user);
+        } catch (\Throwable $e) {
+            $user->delete();
+            report($e);
+
+            return back()->withErrors([
+                'database' => 'Не удалось создать базу данных для пользователя. Попробуйте позже.',
+            ])->withInput();
+        }
 
         event(new Registered($user));
 
